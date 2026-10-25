@@ -1,0 +1,33 @@
+// !$*UTF8*$!
+{ archiveVersion = 1; classes = {}; objectVersion = 56; objects = {
+111111111111111111111101 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreview.swift; sourceTree = "<group>"; };
+111111111111111111111102 = { isa = PBXBuildFile; fileRef = 111111111111111111111101; };
+E6C8DD0FAA849060DC9D50D0 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureRecorder.swift; sourceTree = "<group>"; };
+AD78C4AF0D064624F2BC7E1B = { isa = PBXBuildFile; fileRef = E6C8DD0FAA849060DC9D50D0; };
+9727B9EED8ACD2EE46E136A0 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+E11030640FCC0E9D6783BF78 = { isa = PBXBuildFile; fileRef = 9727B9EED8ACD2EE46E136A0; };
+9A5D8AE7390C54A46D4CCFC2 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPrompterApp.swift; sourceTree = "<group>"; };
+155619213CD3E31E8B0FBE7E = { isa = PBXBuildFile; fileRef = 9A5D8AE7390C54A46D4CCFC2; };
+AD49C8590F8455485B2349D3 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+BF99057FC7EB48DCB0BF8363 = { isa = PBXBuildFile; fileRef = AD49C8590F8455485B2349D3; };
+CFDA27E49DD6025ADF0F8EEA = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeleprompterController.swift; sourceTree = "<group>"; };
+C96661DB7624C60AC730E154 = { isa = PBXBuildFile; fileRef = CFDA27E49DD6025ADF0F8EEA; };
+1BDBD24583AAF7F81F76B976 = { isa = PBXGroup; children = (111111111111111111111101,E6C8DD0FAA849060DC9D50D0,9727B9EED8ACD2EE46E136A0,9A5D8AE7390C54A46D4CCFC2,AD49C8590F8455485B2349D3,CFDA27E49DD6025ADF0F8EEA); path = Sources/TeleprompterApp; sourceTree = "<group>"; };
+8F60702AC53B1FAC3FB753D8 = { isa = PBXFileReference; explicitFileType = wrapper.application; path = LocalPrompter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+FBDC4F23F93125BBEEAE800C = { isa = PBXGroup; children = (8F60702AC53B1FAC3FB753D8); name = Products; sourceTree = "<group>"; };
+F97E10D1020E3BEF961AF77B = { isa = PBXGroup; children = (1BDBD24583AAF7F81F76B976, FBDC4F23F93125BBEEAE800C); sourceTree = "<group>"; };
+BCE16DD0260827ECF338C787 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (111111111111111111111102,AD78C4AF0D064624F2BC7E1B,E11030640FCC0E9D6783BF78,155619213CD3E31E8B0FBE7E,BF99057FC7EB48DCB0BF8363,C96661DB7624C60AC730E154); runOnlyForDeploymentPostprocessing = 0; };
+582681C2EAE02B3F3D399C0C = { isa = XCLocalSwiftPackageReference; relativePath = .; };
+D069509556BFAFFC25586CC3 = { isa = XCSwiftPackageProductDependency; package = 582681C2EAE02B3F3D399C0C; productName = TeleprompterCore; };
+ABFE60E429B642B2B45ADF15 = { isa = PBXBuildFile; productRef = D069509556BFAFFC25586CC3; };
+7561BFB015D8F536760CB671 = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (ABFE60E429B642B2B45ADF15); runOnlyForDeploymentPostprocessing = 0; };
+0189424A5A60FED329FA868E = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+89E1FD6268CC0F221A2BE178 = { isa = XCBuildConfiguration; name = Debug; buildSettings = { MACOSX_DEPLOYMENT_TARGET = 13.0; ARCHS = arm64; ONLY_ACTIVE_ARCH = YES; SUPPORTED_PLATFORMS = macosx; SDKROOT = macosx; SWIFT_VERSION = 5.0; CLANG_ENABLE_MODULES = YES; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG"; }; };
+7082CC0B6FC1282FCEABD07A = { isa = XCBuildConfiguration; name = Debug; buildSettings = { PRODUCT_BUNDLE_IDENTIFIER = com.perfacttang.LocalPrompter; PRODUCT_NAME = LocalPrompter; INFOPLIST_FILE = Resources/Info.plist; GENERATE_INFOPLIST_FILE = NO; CODE_SIGN_STYLE = Manual; CODE_SIGN_IDENTITY = "-"; ENABLE_APP_SANDBOX = NO; SWIFT_EMIT_LOC_STRINGS = NO; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks"; }; };
+E6DE6C99132752C914FEF632 = { isa = XCBuildConfiguration; name = Release; buildSettings = { MACOSX_DEPLOYMENT_TARGET = 13.0; ARCHS = arm64; ONLY_ACTIVE_ARCH = YES; SUPPORTED_PLATFORMS = macosx; SDKROOT = macosx; SWIFT_VERSION = 5.0; CLANG_ENABLE_MODULES = YES; SWIFT_OPTIMIZATION_LEVEL = "-O"; SWIFT_ACTIVE_COMPILATION_CONDITIONS = ""; }; };
+639A7CA24D39909E713B47F7 = { isa = XCBuildConfiguration; name = Release; buildSettings = { PRODUCT_BUNDLE_IDENTIFIER = com.perfacttang.LocalPrompter; PRODUCT_NAME = LocalPrompter; INFOPLIST_FILE = Resources/Info.plist; GENERATE_INFOPLIST_FILE = NO; CODE_SIGN_STYLE = Manual; CODE_SIGN_IDENTITY = "-"; ENABLE_APP_SANDBOX = NO; SWIFT_EMIT_LOC_STRINGS = NO; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks"; }; };
+49EA05A46B1A86EA7E413B43 = { isa = XCConfigurationList; buildConfigurations = (89E1FD6268CC0F221A2BE178,E6DE6C99132752C914FEF632); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+F497FD0CF9CA1625C4A860DE = { isa = XCConfigurationList; buildConfigurations = (7082CC0B6FC1282FCEABD07A,639A7CA24D39909E713B47F7); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+0E8A3AD980EC179856012B7E = { isa = PBXNativeTarget; buildConfigurationList = F497FD0CF9CA1625C4A860DE; buildPhases = (BCE16DD0260827ECF338C787,7561BFB015D8F536760CB671,0189424A5A60FED329FA868E); buildRules = (); dependencies = (); name = LocalPrompter; packageProductDependencies = (D069509556BFAFFC25586CC3); productName = LocalPrompter; productReference = 8F60702AC53B1FAC3FB753D8; productType = "com.apple.product-type.application"; };
+98F54143AB4E86B28C3AFEE0 = { isa = PBXProject; attributes = { LastUpgradeCheck = 1600; }; buildConfigurationList = 49EA05A46B1A86EA7E413B43; compatibilityVersion = "Xcode 14.0"; developmentRegion = zh_CN; hasScannedForEncodings = 0; knownRegions = (en,zh_CN,Base); mainGroup = F97E10D1020E3BEF961AF77B; packageReferences = (582681C2EAE02B3F3D399C0C); productRefGroup = FBDC4F23F93125BBEEAE800C; projectDirPath = ""; projectRoot = ""; targets = (0E8A3AD980EC179856012B7E); };
+}; rootObject = 98F54143AB4E86B28C3AFEE0; }

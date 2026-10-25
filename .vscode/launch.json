@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:AI_Teleprompter_for_Mac}",
+            "name": "Debug LocalPrompter",
+            "target": "LocalPrompter",
+            "configuration": "debug",
+            "preLaunchTask": "swift: Build Debug LocalPrompter"
+        },
+        {
+            "type": "swift",
+            "request": "launch",
+            "args": [],
+            "cwd": "${workspaceFolder:AI_Teleprompter_for_Mac}",
+            "name": "Release LocalPrompter",
+            "target": "LocalPrompter",
+            "configuration": "release",
+            "preLaunchTask": "swift: Build Release LocalPrompter"
+        }
+    ]
+}
